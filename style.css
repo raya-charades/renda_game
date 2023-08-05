@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #111;
+    font-size: 16px;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem 0;
+}
+
+.app {
+    border: 1px solid #111;
+    border-radius: 1rem;
+    height: 32rem;
+    padding: 1rem;
+    width: min(100%, 30rem);
+}
+
+.time {
+    font-weight: bold;
+    height: 2rem;
+    width: 100%;
+}
+
+.gauge {
+    background: #79b0c6;
+    height: .5rem;
+    width: 100%;
+}
+
+.count {
+    font-size: 8rem;
+    font-weight: bold;
+    height: 12rem;
+    line-height: 12rem;
+    text-align: center;
+    width: 100%;
+}
+
+.text {
+    margin-bottom: .5rem;
+}
+
+.ranking {
+    list-style: none;
+}
+
+.ranking li {
+    margin-bottom: .25rem;
+}
+
+.button {
+    background-color: #79b0c6;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    height: 4rem;
+    margin: 0 auto 1rem;
+    width: 12rem;
+}
+
+.button:active {
+    opacity: .8;
+}
