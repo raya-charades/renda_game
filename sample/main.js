@@ -2,7 +2,7 @@
     'use strict'
 
     // 変更されない値（定数）
-    const GAME_TIME = 1
+    const GAME_TIME = 3
 
     // 変更される値
     const state = {
@@ -52,7 +52,7 @@
             setCountTime()
         }
 
-        state.count = state.count + 2
+        state.count++
         setCount()
     }
 
@@ -82,7 +82,7 @@
 
     // ゲーム終了時の処理
     const finishGame = () => {
-        btn.textContent = 'RISETTO'
+        btn.textContent = 'RESET'
         ranking.textContent = ''
         state.ranking.push(state.count)
         state.ranking.sort((a, b) => b - a).length = 3
